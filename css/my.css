@@ -1,0 +1,61 @@
+
+
+.submenu{
+	visibility: hidden;
+	opacity: 0;
+	height: 0;
+	transition: all .3s;
+}
+.submenu.visible{
+	visibility: visible;
+	height: 200px;
+	opacity: 1;
+}
+
+.menuitem{
+	cursor: pointer;
+	transition: all .2s;
+}
+.menuitem:hover{
+	transform: scale(1.2);
+}
+
+.accessories {
+	cursor: move;
+}
+
+.accessories:not(.dragging) {
+	transition: top .15s, left .15s, transform .15s;
+}
+
+#imageFace {
+	transition: transform .15s;
+}
+
+.drop {
+	transition: all .2s;
+}
+
+.drop.dragentered{
+	background: rgba(0, 199, 255, 0.3);
+	border-color: rgba(0, 168, 255, 0.62);
+	border-style: solid;
+}
+
+.hidden{
+	display: none;
+}
+
+.selected {
+	border: 2px dotted red;
+}
+
+#imageFace.selected{
+	width: 456px;
+	height: 596px;
+}
+
+.button{
+	position: relative;
+	z-index: 9999;
+}
